@@ -1,0 +1,28 @@
++ PY=/opt/conda/envs/nano-vllm/bin/python
++ cd /home/qwen-asr-vllm
++ for arm in eager graph
++ '[' eager = eager ']'
++ EAGER=--enforce-eager
++ tail -5
+++ '[' eager = eager ']'
+++ echo true
++ LLM_ENFORCE_EAGER=true
++ /opt/conda/envs/nano-vllm/bin/python bench/nano_llm_batching_probe.py --model-path /mnt/llm_data/Qwen3-0.6B --device cuda:2 --concurrency 1 --max-new-tokens 32 --max-num-seqs 4 --enforce-eager --out results/streaming2026/llm_probe_eager.json
+    ],
+    "step_calls": 1,
+    "max_step_batch_size": 1
+  }
+}
++ for arm in eager graph
++ '[' graph = eager ']'
++ EAGER=
++ tail -5
+++ '[' graph = eager ']'
+++ echo false
++ LLM_ENFORCE_EAGER=false
++ /opt/conda/envs/nano-vllm/bin/python bench/nano_llm_batching_probe.py --model-path /mnt/llm_data/Qwen3-0.6B --device cuda:2 --concurrency 1 --max-new-tokens 32 --max-num-seqs 4 --out results/streaming2026/llm_probe_graph.json
+    ],
+    "step_calls": 1,
+    "max_step_batch_size": 1
+  }
+}

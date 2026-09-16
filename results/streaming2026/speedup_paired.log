@@ -1,0 +1,5 @@
+SPD_naive_r1 exit=0
+SPD_profile_r1 exit=0
+SPD_naive_r2 exit=0
+SPD_profile_r2 exit=0
+SPEEDUP_COMPLETE

@@ -1,0 +1,175 @@
+{
+  "torch_version": "2.5.1+cu121",
+  "device_count": 4,
+  "matmul_size": 8192,
+  "smi_before": [
+    {
+      "index": 0,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 177.05,
+      "temperature_c": 83,
+      "clock_sm_mhz": 645,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.457,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    },
+    {
+      "index": 1,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 0.0,
+      "temperature_c": 81,
+      "clock_sm_mhz": 690,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.489,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    },
+    {
+      "index": 2,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 195.56,
+      "temperature_c": 82,
+      "clock_sm_mhz": 750,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.532,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    },
+    {
+      "index": 3,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 0.0,
+      "temperature_c": 83,
+      "clock_sm_mhz": 690,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.489,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    }
+  ],
+  "devices": [
+    {
+      "index": 0,
+      "tflops_samples": [
+        67.91,
+        71.51,
+        67.97,
+        64.58,
+        65.44
+      ],
+      "tflops_best": 71.51,
+      "tflops_median": 67.91,
+      "relative_to_best": 0.801
+    },
+    {
+      "index": 1,
+      "tflops_samples": [
+        86.14,
+        88.26,
+        88.02,
+        87.98,
+        89.25
+      ],
+      "tflops_best": 89.25,
+      "tflops_median": 88.02,
+      "relative_to_best": 1.0
+    },
+    {
+      "index": 2,
+      "tflops_samples": [
+        81.37,
+        86.42,
+        87.38,
+        84.61,
+        85.73
+      ],
+      "tflops_best": 87.38,
+      "tflops_median": 85.73,
+      "relative_to_best": 0.979
+    },
+    {
+      "index": 3,
+      "tflops_samples": [
+        67.77,
+        67.95,
+        66.25,
+        69.86,
+        69.73
+      ],
+      "tflops_best": 69.86,
+      "tflops_median": 67.95,
+      "relative_to_best": 0.783
+    }
+  ],
+  "smi_after": [
+    {
+      "index": 0,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 100,
+      "power_draw_w": 177.48,
+      "temperature_c": 83,
+      "clock_sm_mhz": 645,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.457,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    },
+    {
+      "index": 1,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 100,
+      "power_draw_w": 0.0,
+      "temperature_c": 81,
+      "clock_sm_mhz": 690,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.489,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    },
+    {
+      "index": 2,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 100,
+      "power_draw_w": 196.07,
+      "temperature_c": 82,
+      "clock_sm_mhz": 750,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.532,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    },
+    {
+      "index": 3,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 100,
+      "power_draw_w": 0.0,
+      "temperature_c": 84,
+      "clock_sm_mhz": 720,
+      "clock_max_sm_mhz": 1410,
+      "clock_ratio": 0.511,
+      "throttle_reasons": [
+        "sw_thermal_slowdown"
+      ]
+    }
+  ]
+}

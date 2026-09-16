@@ -1,0 +1,470 @@
+The tokenizer you are loading from '/mnt/llm_data/voice_ckpt/Qwen3-ASR-0.6B' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+{
+  "async": {
+    "name": "real_async_committed_processes",
+    "first_audio_ms": 2569.6,
+    "total_ms": 11787.5,
+    "events": [
+      "turn_listening",
+      "asr_partial",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "turn_thinking",
+      "llm_start",
+      "llm_first_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "asr_partial",
+      "asr_committed",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "asr_partial",
+      "asr_committed",
+      "llm_chunk",
+      "llm_sentence_ready",
+      "llm_done",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "tts_audio_ready",
+      "tts_first_chunk",
+      "turn_speaking",
+      "tts_chunk",
+      "asr_partial",
+      "asr_committed",
+      "asr_final",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "done",
+      "turn_listening"
+    ],
+    "errors": [],
+    "event_offsets_ms": {
+      "turn_listening": 1.1,
+      "asr_partial": 135.6,
+      "asr_committed": 395.8,
+      "turn_thinking": 1812.4,
+      "llm_start": 1812.5,
+      "llm_first_chunk": 1855.4,
+      "llm_chunk": 1855.5,
+      "llm_sentence_ready": 2035.0,
+      "llm_done": 2044.3,
+      "tts_audio_ready": 2569.4,
+      "tts_first_chunk": 2569.5,
+      "turn_speaking": 2569.6,
+      "tts_chunk": 2569.6,
+      "asr_final": 2629.8,
+      "done": 11786.2
+    },
+    "details": {
+      "tts_chunk_timeline": [
+        {
+          "at_ms": 2569.6,
+          "audio_ms": 160.0
+        },
+        {
+          "at_ms": 3524.8,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 4805.8,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 6419.3,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 8418.3,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 10641.0,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 11785.4,
+          "audio_ms": 240.0
+        }
+      ],
+      "asr_hypothesis": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "llm_prompt": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill",
+      "asr_final_text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "llm_output": "If the boy also willed it, Montfichet would have felt too ill.",
+      "tts_inputs": [
+        "If the boy also willed it, Montfichet would have felt too ill."
+      ],
+      "tts_rendered_inputs": [
+        "If the boy also willed it, Montfichet would have felt too ill."
+      ],
+      "tts_streaming": true,
+      "first_audio_bytes": 7724,
+      "tts_chunk_count": 7,
+      "tts_audio_bytes": 173108,
+      "tts_audio_duration_ms": 3600.0,
+      "input_wall_ms": 2628.7,
+      "tts_codec_frames_estimate": 43.2,
+      "tts_codec_tokens_estimate": 691.2,
+      "tts_codec_tokens_per_s": 1293.3201377614193,
+      "resident_services": {
+        "asr": {
+          "pid": 4159227,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:0",
+            "allocated_bytes": 5361522176,
+            "reserved_bytes": 5460983808,
+            "peak_allocated_bytes": 5364899328,
+            "device_used_bytes": 8734638080,
+            "device_free_bytes": 33564196864,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {}
+        },
+        "llm": {
+          "pid": 4159896,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:2",
+            "allocated_bytes": 3117698560,
+            "reserved_bytes": 3198156800,
+            "peak_allocated_bytes": 3118619136,
+            "device_used_bytes": 6480199680,
+            "device_free_bytes": 35818635264,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {
+            "online": {
+              "step_calls": 0,
+              "max_step_batch_size": 0
+            },
+            "warmup": {
+              "batch_sizes": [
+                1
+              ],
+              "step_calls": 1,
+              "max_step_batch_size": 1
+            }
+          }
+        },
+        "tts": {
+          "pid": 4160421,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:0",
+            "allocated_bytes": 0,
+            "reserved_bytes": 0,
+            "peak_allocated_bytes": 0,
+            "device_used_bytes": 9174581248,
+            "device_free_bytes": 33124253696,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {
+            "code_predictor": {
+              "graph_captures": 2,
+              "graph_replays": 7,
+              "lazy_captures": 0,
+              "bundles": 2,
+              "bundle_keys": [
+                "((1, 2, 2048), 'cuda:1', 'torch.float16', True, 15)",
+                "((2, 2, 2048), 'cuda:1', 'torch.float16', True, 15)"
+              ],
+              "steady_state": true,
+              "closed": false,
+              "trace_tokens": [
+                "0a2a724fef593feb52db0bdffad29e0b007e95a86e734e0be707a4cc60ae57a3",
+                "55c80901f85c091cc19b8fb1946e64b4cb764a2087df676212777930272790fd",
+                "982bcbb416c1968172aed7ecc301b1bc5d7d27ea4913219f09dcef79538a114a",
+                "447409ead0e5844b1b9bdef192eaeb00b7b358514c51b5a9626272c87c3f7655",
+                "d905f58ae8614c0a0d5abc386e47df7a31803a0100a76e902c9e5b51e45ccefa",
+                "836b737966c25564d5caf87bdbd99e92ebbd131e04c3433fadbfed4c78cfdd57",
+                "bbabb74efbee07e0502e839955d9d8465b4188098a06097463ff393964d3674a"
+              ],
+              "trace_token_values": [
+                [
+                  [
+                    1159,
+                    355,
+                    22,
+                    1174,
+                    1093,
+                    625,
+                    1814,
+                    1058,
+                    905,
+                    1846,
+                    1247,
+                    1677,
+                    889,
+                    812,
+                    901
+                  ]
+                ],
+                [
+                  [
+                    1566,
+                    357,
+                    1689,
+                    1865,
+                    1765,
+                    289,
+                    994,
+                    475,
+                    1037,
+                    407,
+                    969,
+                    953,
+                    705,
+                    166,
+                    1927
+                  ]
+                ],
+                [
+                  [
+                    1969,
+                    1413,
+                    1735,
+                    22,
+                    1472,
+                    94,
+                    1271,
+                    485,
+                    426,
+                    1261,
+                    395,
+                    1404,
+                    106,
+                    86,
+                    206
+                  ]
+                ],
+                [
+                  [
+                    207,
+                    1239,
+                    913,
+                    1768,
+                    964,
+                    1478,
+                    263,
+                    484,
+                    1719,
+                    410,
+                    1234,
+                    478,
+                    1424,
+                    2002,
+                    302
+                  ]
+                ],
+                [
+                  [
+                    251,
+                    1917,
+                    262,
+                    358,
+                    1583,
+                    1309,
+                    1446,
+                    610,
+                    874,
+                    2025,
+                    764,
+                    636,
+                    1575,
+                    234,
+                    1953
+                  ]
+                ],
+                [
+                  [
+                    5,
+                    600,
+                    40,
+                    329,
+                    1238,
+                    2014,
+                    1988,
+                    195,
+                    1635,
+                    1008,
+                    624,
+                    1193,
+                    21,
+                    383,
+                    802
+                  ]
+                ],
+                [
+                  [
+                    730,
+                    1777,
+                    1645,
+                    1358,
+                    1791,
+                    485,
+                    172,
+                    505,
+                    1074,
+                    1046,
+                    1332,
+                    1200,
+                    409,
+                    1109,
+                    793
+                  ]
+                ]
+              ],
+              "trace_logits": [],
+              "trace_cache": [],
+              "trace_hidden": [],
+              "request_batches": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "slot_batches": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "padded_slots": 0,
+              "slot_count": 2,
+              "batch_window_ms": 0.0
+            },
+            "outer_talker": {
+              "prefill_calls": 1,
+              "static_steps_by_batch": {
+                "1": 7
+              },
+              "active_slots_per_step": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "slot_occupancy": 1.0,
+              "errors": 0,
+              "cache_allocations": 1,
+              "allocated_kv_bytes": 1879048192,
+              "active_kv_tokens_per_step": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "backing_capacity_tokens": 16384,
+              "active_capacity_ratio": 0.0009765625,
+              "cache_resets": 2,
+              "cache_overflows": 0
+            },
+            "stream_batch_gate": {
+              "native_batches": 0,
+              "scalar_fallback_batches": 0,
+              "scalar_fallback_requests": 0
+            }
+          },
+          "supports_streaming": true,
+          "tts_scheduler": "legacy-stream-batch",
+          "scheduler": {
+            "batch_sizes": [
+              1
+            ],
+            "batches": 1,
+            "batch_window_ms": 10.0,
+            "max_batch_size": 2,
+            "queue_wait_ms": [
+              15.867053531110287
+            ],
+            "refill_count": 0,
+            "active_slots": 1,
+            "padded_slots": 1,
+            "max_active_slots": 1,
+            "cancellations": 0,
+            "pending": 0,
+            "closed": false
+          },
+          "shared_memory": {
+            "created_segments": 0,
+            "created_bytes": 0,
+            "received_segments": 0,
+            "received_bytes": 0,
+            "unlinked_segments": 0,
+            "cleanup_segments": 0,
+            "outstanding_segments": 0,
+            "threshold": 65536
+          }
+        }
+      },
+      "derived_ms": {
+        "llm_ttft": 42.9,
+        "llm_to_first_tts_text": 179.6,
+        "tts_wait": 534.5,
+        "tts_compute_wait": 534.4,
+        "tts_release_delay": 0.1,
+        "committed_lead_vs_final": 2234.0,
+        "first_audio_after_input_end": -59.2
+      }
+    }
+  }
+}

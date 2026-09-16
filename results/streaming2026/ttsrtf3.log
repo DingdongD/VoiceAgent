@@ -1,0 +1,4 @@
+graph_c8 exit=0
+hf_batch exit=1
+hf_nograph_cp exit=0
+TTSRTF3_COMPLETE

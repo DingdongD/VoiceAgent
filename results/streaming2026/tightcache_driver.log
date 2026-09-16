@@ -1,0 +1,5 @@
+upstream exit=0
+graph160 exit=0
+prefix160 exit=0
+upstream2 exit=0
+TIGHTCACHE_COMPLETE

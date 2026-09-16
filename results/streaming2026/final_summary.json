@@ -1,0 +1,113 @@
+[
+  {
+    "arm": "A_baseline",
+    "first_audio_ms": 7007.6,
+    "total_ms": 9906.2,
+    "input_wall_ms": 2752.5,
+    "asr_partials": 21,
+    "llm_chunks": 15,
+    "tts_chunks": 2,
+    "tts_audio_bytes": 130648,
+    "tts_streaming": false,
+    "asr_hypothesis": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+    "llm_output": "Yes, I can help with that. What would you like to ask?",
+    "errors": [],
+    "segments_ms": {
+      "asr_to_committed": 387.6,
+      "llm_ttft": 49.3,
+      "llm_to_first_sentence": 1973.3,
+      "tts_first_audio": 4596.7
+    },
+    "offsets_ms": {
+      "turn_listening": 1.5,
+      "asr_partial": 119.8,
+      "asr_committed": 387.6,
+      "turn_thinking": 387.7,
+      "llm_start": 387.9,
+      "llm_first_chunk": 437.2,
+      "llm_chunk": 437.3,
+      "llm_sentence_ready": 2410.5,
+      "llm_done": 2626.0,
+      "asr_final": 2753.7,
+      "tts_audio_ready": 7007.2,
+      "tts_first_chunk": 7007.4,
+      "turn_speaking": 7007.5,
+      "tts_chunk": 7007.6,
+      "done": 9904.7
+    }
+  },
+  {
+    "arm": "H_bargefix",
+    "first_audio_ms": 1069.8,
+    "total_ms": 9412.1,
+    "input_wall_ms": 2712.4,
+    "asr_partials": 21,
+    "llm_chunks": 15,
+    "tts_chunks": 14,
+    "tts_audio_bytes": 227176,
+    "tts_streaming": true,
+    "asr_hypothesis": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+    "llm_output": "Yes, I can help with that. What would you like to ask?",
+    "errors": [],
+    "segments_ms": {
+      "asr_to_committed": 405.5,
+      "llm_ttft": 54.4,
+      "llm_to_first_sentence": 43.9,
+      "tts_first_audio": 565.5
+    },
+    "offsets_ms": {
+      "turn_listening": 0.8,
+      "asr_partial": 131.2,
+      "asr_committed": 405.5,
+      "turn_thinking": 405.6,
+      "llm_start": 405.7,
+      "llm_first_chunk": 460.1,
+      "llm_chunk": 460.1,
+      "llm_sentence_ready": 504.0,
+      "llm_done": 618.8,
+      "tts_audio_ready": 1069.5,
+      "tts_first_chunk": 1069.6,
+      "turn_speaking": 1069.7,
+      "tts_chunk": 1069.7,
+      "asr_final": 2713.2,
+      "done": 9411.2
+    }
+  },
+  {
+    "arm": "I_profile",
+    "first_audio_ms": 1036.7,
+    "total_ms": 9229.0,
+    "input_wall_ms": 2767.1,
+    "asr_partials": 21,
+    "llm_chunks": 15,
+    "tts_chunks": 14,
+    "tts_audio_bytes": 227176,
+    "tts_streaming": true,
+    "asr_hypothesis": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+    "llm_output": "Yes, I can help with that. What would you like to ask?",
+    "errors": [],
+    "segments_ms": {
+      "asr_to_committed": 405.4,
+      "llm_ttft": 47.4,
+      "llm_to_first_sentence": 45.1,
+      "tts_first_audio": 538.4
+    },
+    "offsets_ms": {
+      "turn_listening": 1.0,
+      "asr_partial": 133.4,
+      "asr_committed": 405.4,
+      "turn_thinking": 405.5,
+      "llm_start": 405.6,
+      "llm_first_chunk": 453.0,
+      "llm_chunk": 453.0,
+      "llm_sentence_ready": 498.1,
+      "llm_done": 614.8,
+      "tts_audio_ready": 1036.5,
+      "tts_first_chunk": 1036.6,
+      "turn_speaking": 1036.6,
+      "tts_chunk": 1036.7,
+      "asr_final": 2768.0,
+      "done": 9227.8
+    }
+  }
+]

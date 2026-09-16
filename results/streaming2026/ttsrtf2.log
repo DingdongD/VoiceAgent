@@ -1,0 +1,7 @@
+hf exit=0
+prefix_c8 exit=0
+prefix_c16 exit=0
+prefix_c24 exit=0
+graph_c8 exit=1
+graph_c16 exit=1
+TTSRTF_COMPLETE

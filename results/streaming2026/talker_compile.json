@@ -1,0 +1,23 @@
+{
+  "device": "cuda:1",
+  "repeats": 3,
+  "arms": {
+    "reduce-overhead": {
+      "error": "RuntimeError: Inplace update to inference tensor outside InferenceMode is not allowed.You can make a clone to get a normal tensor before doing inplace update.See https://github.com/pytorch/rfcs/pull/17 for more details."
+    },
+    "default": {
+      "error": "RuntimeError: Offset increment outside graph capture encountered unexpectedly."
+    },
+    "max-autotune-no-cudagraphs": {
+      "error": "BackendCompilerFailed: backend='inductor' raised:\nRuntimeError: Offset increment outside graph capture encountered unexpectedly.\n\nSet TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more information\n\n\nYou can suppress this exception and fall back to eager by setting:\n    import torch._dynamo\n    torch._dynamo.config.suppress_errors = True\n"
+    }
+  },
+  "eager_ms": [
+    6763.7,
+    6674.1,
+    6602.1
+  ],
+  "eager_sha": "c27db91e83a9b182",
+  "audio_ms": 5280.0,
+  "eager_rtf": 1.25
+}

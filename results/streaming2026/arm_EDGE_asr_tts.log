@@ -1,0 +1,2082 @@
+{
+  "async": {
+    "name": "real_async_final_processes",
+    "first_audio_ms": 8748.9,
+    "total_ms": 12141.1,
+    "events": [
+      "turn_listening",
+      "asr_partial",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_final",
+      "turn_thinking",
+      "llm_start",
+      "llm_first_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_sentence_ready",
+      "llm_done",
+      "tts_audio_ready",
+      "tts_first_chunk",
+      "turn_speaking",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "done",
+      "turn_listening"
+    ],
+    "errors": [],
+    "event_offsets_ms": {
+      "turn_listening": 1.7,
+      "asr_partial": 76.8,
+      "asr_committed": 867.5,
+      "asr_final": 8252.9,
+      "turn_thinking": 8253.0,
+      "llm_start": 8253.1,
+      "llm_first_chunk": 8307.9,
+      "llm_chunk": 8308.1,
+      "llm_sentence_ready": 8374.3,
+      "llm_done": 8376.5,
+      "tts_audio_ready": 8748.7,
+      "tts_first_chunk": 8748.8,
+      "turn_speaking": 8748.8,
+      "tts_chunk": 8748.9,
+      "done": 12139.6
+    },
+    "details": {
+      "tts_chunk_timeline": [
+        {
+          "at_ms": 8748.9,
+          "audio_ms": 160.0
+        },
+        {
+          "at_ms": 9181.1,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 9632.3,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 9960.8,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 10418.8,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 10862.6,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 11322.1,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 11768.9,
+          "audio_ms": 640.0
+        },
+        {
+          "at_ms": 12139.1,
+          "audio_ms": 400.0
+        }
+      ],
+      "asr_timeline": [
+        {
+          "at_ms": 76.8,
+          "kind": "partial",
+          "text": "",
+          "committed": ""
+        },
+        {
+          "at_ms": 474.6,
+          "kind": "partial",
+          "text": "Have.",
+          "committed": ""
+        },
+        {
+          "at_ms": 867.4,
+          "kind": "partial",
+          "text": "Have your.",
+          "committed": "Have"
+        },
+        {
+          "at_ms": 867.5,
+          "kind": "committed",
+          "text": "Have",
+          "committed": "Have"
+        },
+        {
+          "at_ms": 1269.4,
+          "kind": "partial",
+          "text": "Have your will.",
+          "committed": "Have your"
+        },
+        {
+          "at_ms": 1269.6,
+          "kind": "committed",
+          "text": "Have your",
+          "committed": "Have your"
+        },
+        {
+          "at_ms": 1671.1,
+          "kind": "partial",
+          "text": "Have your will, child.",
+          "committed": "Have your will,"
+        },
+        {
+          "at_ms": 1671.3,
+          "kind": "committed",
+          "text": "Have your will,",
+          "committed": "Have your will,"
+        },
+        {
+          "at_ms": 2071.4,
+          "kind": "partial",
+          "text": "Have your will, child. If the.",
+          "committed": "Have your will, child. If"
+        },
+        {
+          "at_ms": 2071.5,
+          "kind": "committed",
+          "text": "Have your will, child. If",
+          "committed": "Have your will, child. If"
+        },
+        {
+          "at_ms": 2466.5,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy.",
+          "committed": "Have your will, child. If the"
+        },
+        {
+          "at_ms": 2466.6,
+          "kind": "committed",
+          "text": "Have your will, child. If the",
+          "committed": "Have your will, child. If the"
+        },
+        {
+          "at_ms": 2872.0,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also will.",
+          "committed": "Have your will, child. If the boy also"
+        },
+        {
+          "at_ms": 2872.1,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also",
+          "committed": "Have your will, child. If the boy also"
+        },
+        {
+          "at_ms": 3271.2,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it.",
+          "committed": "Have your will, child. If the boy also wills"
+        },
+        {
+          "at_ms": 3271.3,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills",
+          "committed": "Have your will, child. If the boy also wills"
+        },
+        {
+          "at_ms": 3657.7,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it.",
+          "committed": "Have your will, child. If the boy also wills"
+        },
+        {
+          "at_ms": 4088.2,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet.",
+          "committed": "Have your will, child. If the boy also wills it,"
+        },
+        {
+          "at_ms": 4088.3,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it,",
+          "committed": "Have your will, child. If the boy also wills it,"
+        },
+        {
+          "at_ms": 4472.8,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche"
+        },
+        {
+          "at_ms": 4472.9,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche"
+        },
+        {
+          "at_ms": 4887.2,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche"
+        },
+        {
+          "at_ms": 4887.4,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche"
+        },
+        {
+          "at_ms": 5289.0,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too"
+        },
+        {
+          "at_ms": 5289.1,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too"
+        },
+        {
+          "at_ms": 5667.3,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill"
+        },
+        {
+          "at_ms": 5667.4,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill"
+        },
+        {
+          "at_ms": 6103.9,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill"
+        },
+        {
+          "at_ms": 6104.0,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill"
+        },
+        {
+          "at_ms": 6503.8,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 6503.9,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 6915.7,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strong.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 6915.8,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 7270.5,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 7270.7,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 7721.7,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just"
+        },
+        {
+          "at_ms": 7721.8,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just"
+        },
+        {
+          "at_ms": 8059.2,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just"
+        },
+        {
+          "at_ms": 8252.9,
+          "kind": "final",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+          "committed": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just"
+        }
+      ],
+      "asr_hypothesis": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "llm_prompt": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "asr_final_text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "llm_output": "Yes, the boy wills the item, and Montfiche feels too ill to oppose it.",
+      "tts_inputs": [
+        "Yes, the boy wills the item, and Montfiche feels too ill to oppose it."
+      ],
+      "tts_rendered_inputs": [
+        "Yes, the boy wills the item, and Montfiche feels too ill to oppose it."
+      ],
+      "tts_streaming": true,
+      "first_audio_bytes": 7724,
+      "tts_chunk_count": 9,
+      "tts_audio_bytes": 242316,
+      "tts_audio_duration_ms": 5040.0,
+      "input_wall_ms": 8250.6,
+      "input_audio_ms": 8250.0,
+      "gpu_state": [
+        {
+          "index": 0,
+          "memory_used_mib": 440,
+          "memory_free_mib": 39898,
+          "utilization_percent": 0,
+          "power_draw_w": 57.53,
+          "temperature_c": 75,
+          "clock_sm_mhz": 1095,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.777,
+          "throttle_reasons": []
+        },
+        {
+          "index": 1,
+          "memory_used_mib": 440,
+          "memory_free_mib": 39898,
+          "utilization_percent": 0,
+          "power_draw_w": 0.0,
+          "temperature_c": 72,
+          "clock_sm_mhz": 1095,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.777,
+          "throttle_reasons": []
+        },
+        {
+          "index": 2,
+          "memory_used_mib": 4134,
+          "memory_free_mib": 36205,
+          "utilization_percent": 0,
+          "power_draw_w": 54.78,
+          "temperature_c": 72,
+          "clock_sm_mhz": 1095,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.777,
+          "throttle_reasons": []
+        },
+        {
+          "index": 3,
+          "memory_used_mib": 440,
+          "memory_free_mib": 39898,
+          "utilization_percent": 0,
+          "power_draw_w": 0.0,
+          "temperature_c": 74,
+          "clock_sm_mhz": 1095,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.777,
+          "throttle_reasons": []
+        }
+      ],
+      "event_last_offsets_ms": {
+        "turn_listening": 12139.9,
+        "asr_partial": 8059.2,
+        "asr_committed": 7721.8,
+        "asr_final": 8252.9,
+        "turn_thinking": 8253.0,
+        "llm_start": 8253.1,
+        "llm_first_chunk": 8307.9,
+        "llm_chunk": 8374.2,
+        "llm_sentence_ready": 8374.3,
+        "llm_done": 8376.5,
+        "tts_audio_ready": 8748.7,
+        "tts_first_chunk": 8748.8,
+        "turn_speaking": 8748.8,
+        "tts_chunk": 12139.1,
+        "done": 12139.6
+      },
+      "resident_services": {
+        "asr": {
+          "remote": "127.0.0.1:18765"
+        },
+        "llm": {
+          "pid": 295592,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:2",
+            "allocated_bytes": 3117698560,
+            "reserved_bytes": 3198156800,
+            "peak_allocated_bytes": 3118619136,
+            "device_used_bytes": 6480199680,
+            "device_free_bytes": 35818635264,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {
+            "online": {
+              "step_calls": 0,
+              "max_step_batch_size": 0
+            },
+            "warmup": {
+              "batch_sizes": [
+                1
+              ],
+              "step_calls": 1,
+              "max_step_batch_size": 1
+            }
+          }
+        },
+        "tts": {
+          "code_predictor": {
+            "graph_captures": 2,
+            "graph_replays": 70,
+            "lazy_captures": 0,
+            "bundles": 2,
+            "bundle_keys": [
+              "((1, 2, 2048), 'cuda:1', 'torch.float16', True, 15)",
+              "((2, 2, 2048), 'cuda:1', 'torch.float16', True, 15)"
+            ],
+            "steady_state": true,
+            "closed": false,
+            "trace_tokens": [
+              "0a2a724fef593feb52db0bdffad29e0b007e95a86e734e0be707a4cc60ae57a3",
+              "55c80901f85c091cc19b8fb1946e64b4cb764a2087df676212777930272790fd",
+              "982bcbb416c1968172aed7ecc301b1bc5d7d27ea4913219f09dcef79538a114a",
+              "447409ead0e5844b1b9bdef192eaeb00b7b358514c51b5a9626272c87c3f7655",
+              "d905f58ae8614c0a0d5abc386e47df7a31803a0100a76e902c9e5b51e45ccefa",
+              "836b737966c25564d5caf87bdbd99e92ebbd131e04c3433fadbfed4c78cfdd57",
+              "d0bb2e159d65af4ed0a4a99069371e1399c141a2fabe2dc2e3c6c28fb8d65315",
+              "0a2a724fef593feb52db0bdffad29e0b007e95a86e734e0be707a4cc60ae57a3",
+              "2389eb1147e00357bc06ad6a98aa44341202c4471bd500890dbdd0d41bccf83e",
+              "932d65852a2ef524b8709617dad1574b615967ee716b1f4bb09a73df75e96e2f",
+              "87d7ff9568645345a4b5f0b2b5e2f0e9476fd7d7e748adc736fbd57cec7ac165",
+              "b1e58788fac983e9558fe30f521d1304b6731223e2d2db277c0e0b90eb12b283",
+              "12d6aeba6e8d0b1ebd90a6f5f180b7fb34bbd24d92415856e26da5408b26527a",
+              "b0e153a7f1167330932617349b7bf1aea495fdba6a1c84619dd932ae5c3050f2",
+              "ee29a40885ef41065fe1f3a58928f06f8cd9207179e1601416b851a9c7e650ad",
+              "52403335e6ab370f0373ce53a60f41d0c3b95f13b027be201f956152144a46d6",
+              "010f7167ae4cf1cc7b2556426754376f2185ac7f29d6fff09516163180ffbb8b",
+              "7d193c675efef0fd6b0781742e0425cbeba45a4b780d64b7970cc52bfbfba3f7",
+              "77db92e31edc3a676f5cc95469fbdce354fc24ed144ff0d7b2beae46e5d428ad",
+              "310d3a99996adb39f78fa07efa727268bde719596e22173a1f29eab7c8a8ef97",
+              "1bae44c82a1ef95fffee4c8495946745adb0336bfa7abb64deed109e49983b05",
+              "36f00632634a706d4f17a5dc37b39dbb08970dced38b26b463591260ba21cff8",
+              "f0a78f120c964e279cd6a2b2aeaa20a51e8bca25c31ad15b11e77b091014e77b",
+              "5b4ca3e74a00a0817927f56c0d24a6931dd124d75cbf89c209dcc00417e480e9",
+              "41e9cf857ea7d3abb025c471ae7c70d181fb46a5a2590f0e84660b36f926be86",
+              "859b065b53ca2135601bde623866898130c7c4245e7492eaff1e8d968f2e0223",
+              "3869a7e2183e6327777f6f62ceb1176992f055549817fcb96a259735d1addbfb",
+              "c13dadd8157a9084727a720b768865198cc28ec69a0a90ed0d09df6e6a00db48",
+              "ba55a8e096e950aadd62fb5409ff9bdde9d731ecfd8cdd009ddd943cd5e6cc71",
+              "8aadba2cea461d1f5c8ebcdf4727c0fa11094acb47d6f98c61e58f2724e4fce2",
+              "992995137862de6ed559ae3625c08d8901a01f185bcb96c09cd8c4bd78118767",
+              "2a61a47eb62e40d6b3c59511e75e189464c2a69b47c2a3ed589405b56a523aa9",
+              "f63c572848b180389538388fa2bd341a8d7871ee365ccd4c0199b32dccccbc52",
+              "570563940de119fdd24d9e6ed94eb0cbd7c893779bea73e3261d461d2656680a",
+              "29e45d1bd73dadcfe4c8079e45367f16006c45326e10bf902081e89f9f5542c8",
+              "a3d36989b7f72aef0bf841c83d0447a20009087ac61e01dc61c861d8e7dde7c1",
+              "16de96afc19997c771ed6cf714e26e8bedd2715452db5402522925436b5bd9e6",
+              "e7e5ab9a09143749712445f2a0e574e83cdf4f8459268ed9d3531a877968d7da",
+              "6bcda4a0cd61c3c7c9abcb3407daf064f8b801036d7a6a6554f1fb2167b8057d",
+              "80ecfb2a0b4146a029eb2976857635e11a1f4af94cd17e1c9cd381b8e6496a42",
+              "336da165def87f3190f8ed659178f841b5100964b63f73e89b73b6a330edff39",
+              "f6d225645e50ec5746c14f0ff82789e1a54afed2f46e508e836f7b72402862b6",
+              "8480c20d35846d1ddb855139c0775c27aebab76aefec96b466204307d3d86d99",
+              "946870b4f4544c7adf3e00977f8fd80816c38eabf2fc45039ff0acf00e37d9ed",
+              "4af2f8fd11f05667881c82b0f7b6b77de73b55bb2c5442fb7b31a84fce72d1f1",
+              "07baab92844990849ef5e6ebd06908553206d8294d98bec98916669316408ca7",
+              "de3dcb0444bc7944050f0447bd0eddbeff0f6b207b80206f1a752fa8ebb86cf6",
+              "73074fbfdbe1a4fe28396b62abf8970b4f0ac96c41ca1eb0456c2faaeca2b199",
+              "01708a0006120cf5bf60d95a349391b998273e48428a723b2aea1ef78c880764",
+              "cd6da6868034eca708dadfba3bb8369ea3aeaa6bbbaf05321090078454a9448b",
+              "af8b60ca1ae8115237dcf466a6798fa6dee52a20108a64b6806866214ccf8f67",
+              "f3cc8839e06977f8ff39ddaf03f6fc61eaa865e6159237ee4c87f66ecb3c9a3e",
+              "0cafdfdcc6976d088eebee9edd0c9f45b9996cb6884422159683419efcebd25f",
+              "09d219ea41d4ab97eedab99573d7e81e470072b8b00796a6c57e0b55a74dedc7",
+              "c1fa3b7af999d481991f30141491cd93f03c18ea98d41600900394ce0a01f72c",
+              "2f10fb4ead9a0535b9ced1a5d261598beefe790644ff00a1a0c7f6530b2a384f",
+              "43ef0cb4a5a20dd84c9903e6ef75fc77064385a8463df47cbb30332c2446e79a",
+              "cc8b122026760e5204244206a2c90725a7bf3504c1b0d6938d63fca74dd27fdc",
+              "476ccfdb9375c939199c5d83fc667cce1cb40febf4c3a5edf454b4804c9c81c3",
+              "3a47adcf5aa838e81c7b2ec046542a0c5c6dab3e0f626df2f109dbe33f7c7875",
+              "183ebf52e87b836d6ffa7e14264c185091495f064618a63a0659f3e19669f1f2",
+              "542e1c0dc5e6e06a2f8b4eccb7e56d48d3766fdd22e9abb7d14b16fb15858d6e",
+              "7e1a23aaea658efa72ad860926ec97921602f0302d92b9c36f2a6d2283f7fb90",
+              "499e9eab49dd71036e32aa7308834a4ef0e7b08d6d2a7bc589c3f3f7b5a2f652",
+              "5e86e0312b40698e21e5be9d274da5a63e4f67eac30ecd670722559b92c9140e",
+              "440af1283a4abc854f971d7a1bb3a81effa8d9c7b66ad33965ad504a77c22f00",
+              "2a59c1face3ed24495fb86dbaf5b82bb5b70f91ae483d2c3e33c2ee7d226c4fd",
+              "be4260d7466074ce269426e36ad744d653ade4686e5ff02282b30a87772a81a5",
+              "9f3db5af925bbe603151c6bb5f3f5e2bfd385c94151f9a4da8cea9e5f0eb1b59",
+              "d9c8a8c067fa6af92562bb1245d26fe92b6ee47a24b86fee9d0fe8df6a88678c"
+            ],
+            "trace_token_values": [
+              [
+                [
+                  1159,
+                  355,
+                  22,
+                  1174,
+                  1093,
+                  625,
+                  1814,
+                  1058,
+                  905,
+                  1846,
+                  1247,
+                  1677,
+                  889,
+                  812,
+                  901
+                ]
+              ],
+              [
+                [
+                  1566,
+                  357,
+                  1689,
+                  1865,
+                  1765,
+                  289,
+                  994,
+                  475,
+                  1037,
+                  407,
+                  969,
+                  953,
+                  705,
+                  166,
+                  1927
+                ]
+              ],
+              [
+                [
+                  1969,
+                  1413,
+                  1735,
+                  22,
+                  1472,
+                  94,
+                  1271,
+                  485,
+                  426,
+                  1261,
+                  395,
+                  1404,
+                  106,
+                  86,
+                  206
+                ]
+              ],
+              [
+                [
+                  207,
+                  1239,
+                  913,
+                  1768,
+                  964,
+                  1478,
+                  263,
+                  484,
+                  1719,
+                  410,
+                  1234,
+                  478,
+                  1424,
+                  2002,
+                  302
+                ]
+              ],
+              [
+                [
+                  251,
+                  1917,
+                  262,
+                  358,
+                  1583,
+                  1309,
+                  1446,
+                  610,
+                  874,
+                  2025,
+                  764,
+                  636,
+                  1575,
+                  234,
+                  1953
+                ]
+              ],
+              [
+                [
+                  5,
+                  600,
+                  40,
+                  329,
+                  1238,
+                  2014,
+                  1988,
+                  195,
+                  1635,
+                  1008,
+                  624,
+                  1193,
+                  21,
+                  383,
+                  802
+                ]
+              ],
+              [
+                [
+                  730,
+                  1777,
+                  1645,
+                  1358,
+                  1791,
+                  485,
+                  172,
+                  505,
+                  1074,
+                  1046,
+                  129,
+                  1200,
+                  392,
+                  1109,
+                  731
+                ]
+              ],
+              [
+                [
+                  1159,
+                  355,
+                  22,
+                  1174,
+                  1093,
+                  625,
+                  1814,
+                  1058,
+                  905,
+                  1846,
+                  1247,
+                  1677,
+                  889,
+                  812,
+                  901
+                ]
+              ],
+              [
+                [
+                  314,
+                  1212,
+                  1689,
+                  1295,
+                  207,
+                  1987,
+                  897,
+                  935,
+                  1335,
+                  756,
+                  121,
+                  120,
+                  77,
+                  687,
+                  863
+                ]
+              ],
+              [
+                [
+                  972,
+                  357,
+                  250,
+                  1461,
+                  452,
+                  1457,
+                  993,
+                  350,
+                  327,
+                  922,
+                  582,
+                  63,
+                  332,
+                  392,
+                  411
+                ]
+              ],
+              [
+                [
+                  819,
+                  1533,
+                  16,
+                  1735,
+                  1318,
+                  1862,
+                  818,
+                  1845,
+                  299,
+                  1901,
+                  1424,
+                  1001,
+                  586,
+                  76,
+                  295
+                ]
+              ],
+              [
+                [
+                  1829,
+                  1011,
+                  995,
+                  229,
+                  219,
+                  523,
+                  994,
+                  249,
+                  1333,
+                  2,
+                  852,
+                  120,
+                  212,
+                  1075,
+                  394
+                ]
+              ],
+              [
+                [
+                  525,
+                  398,
+                  259,
+                  1305,
+                  24,
+                  148,
+                  537,
+                  753,
+                  2032,
+                  1256,
+                  1898,
+                  1589,
+                  1424,
+                  912,
+                  326
+                ]
+              ],
+              [
+                [
+                  1402,
+                  659,
+                  1182,
+                  1175,
+                  1144,
+                  488,
+                  761,
+                  1352,
+                  987,
+                  413,
+                  346,
+                  1119,
+                  1990,
+                  193,
+                  1342
+                ]
+              ],
+              [
+                [
+                  1402,
+                  1213,
+                  1363,
+                  1938,
+                  1325,
+                  859,
+                  2031,
+                  734,
+                  1584,
+                  169,
+                  949,
+                  1384,
+                  1422,
+                  85,
+                  558
+                ]
+              ],
+              [
+                [
+                  1927,
+                  928,
+                  629,
+                  239,
+                  1485,
+                  1579,
+                  1777,
+                  564,
+                  303,
+                  1076,
+                  362,
+                  914,
+                  344,
+                  85,
+                  901
+                ]
+              ],
+              [
+                [
+                  1221,
+                  1574,
+                  1209,
+                  1444,
+                  1485,
+                  1759,
+                  1984,
+                  241,
+                  467,
+                  743,
+                  362,
+                  1713,
+                  781,
+                  812,
+                  1435
+                ]
+              ],
+              [
+                [
+                  1632,
+                  1402,
+                  1358,
+                  1210,
+                  121,
+                  34,
+                  1059,
+                  1220,
+                  2007,
+                  743,
+                  543,
+                  1555,
+                  1484,
+                  82,
+                  1435
+                ]
+              ],
+              [
+                [
+                  81,
+                  681,
+                  946,
+                  134,
+                  889,
+                  954,
+                  668,
+                  49,
+                  995,
+                  1756,
+                  466,
+                  1357,
+                  1495,
+                  1759,
+                  124
+                ]
+              ],
+              [
+                [
+                  751,
+                  1046,
+                  109,
+                  1024,
+                  991,
+                  990,
+                  1393,
+                  93,
+                  1733,
+                  1047,
+                  738,
+                  342,
+                  968,
+                  362,
+                  575
+                ]
+              ],
+              [
+                [
+                  1908,
+                  949,
+                  389,
+                  142,
+                  492,
+                  593,
+                  138,
+                  844,
+                  671,
+                  131,
+                  1226,
+                  1576,
+                  2010,
+                  741,
+                  324
+                ]
+              ],
+              [
+                [
+                  75,
+                  423,
+                  9,
+                  1394,
+                  47,
+                  570,
+                  80,
+                  818,
+                  1804,
+                  1328,
+                  959,
+                  1288,
+                  997,
+                  710,
+                  588
+                ]
+              ],
+              [
+                [
+                  623,
+                  1782,
+                  724,
+                  222,
+                  311,
+                  1482,
+                  874,
+                  507,
+                  41,
+                  1163,
+                  478,
+                  94,
+                  253,
+                  1304,
+                  70
+                ]
+              ],
+              [
+                [
+                  653,
+                  108,
+                  429,
+                  1575,
+                  87,
+                  1333,
+                  1518,
+                  158,
+                  1487,
+                  967,
+                  0,
+                  614,
+                  592,
+                  1189,
+                  1083
+                ]
+              ],
+              [
+                [
+                  262,
+                  678,
+                  273,
+                  1575,
+                  1975,
+                  997,
+                  1220,
+                  1595,
+                  147,
+                  1056,
+                  519,
+                  529,
+                  669,
+                  498,
+                  2026
+                ]
+              ],
+              [
+                [
+                  671,
+                  954,
+                  140,
+                  604,
+                  983,
+                  1700,
+                  311,
+                  554,
+                  295,
+                  425,
+                  680,
+                  1463,
+                  370,
+                  1336,
+                  913
+                ]
+              ],
+              [
+                [
+                  1511,
+                  1326,
+                  704,
+                  659,
+                  4,
+                  1253,
+                  1028,
+                  1140,
+                  1044,
+                  1333,
+                  1001,
+                  350,
+                  1016,
+                  831,
+                  1644
+                ]
+              ],
+              [
+                [
+                  326,
+                  141,
+                  377,
+                  1575,
+                  600,
+                  1585,
+                  798,
+                  318,
+                  901,
+                  1839,
+                  975,
+                  860,
+                  120,
+                  1713,
+                  146
+                ]
+              ],
+              [
+                [
+                  637,
+                  995,
+                  451,
+                  1575,
+                  1890,
+                  771,
+                  1091,
+                  294,
+                  83,
+                  1836,
+                  243,
+                  1115,
+                  450,
+                  390,
+                  1953
+                ]
+              ],
+              [
+                [
+                  28,
+                  523,
+                  511,
+                  1151,
+                  1741,
+                  770,
+                  1825,
+                  1484,
+                  343,
+                  972,
+                  916,
+                  846,
+                  702,
+                  1712,
+                  324
+                ]
+              ],
+              [
+                [
+                  1561,
+                  1681,
+                  40,
+                  677,
+                  1613,
+                  498,
+                  1797,
+                  28,
+                  1456,
+                  75,
+                  47,
+                  1609,
+                  969,
+                  1433,
+                  2006
+                ]
+              ],
+              [
+                [
+                  532,
+                  859,
+                  1588,
+                  1575,
+                  1992,
+                  61,
+                  843,
+                  667,
+                  423,
+                  972,
+                  758,
+                  1248,
+                  550,
+                  195,
+                  244
+                ]
+              ],
+              [
+                [
+                  57,
+                  386,
+                  672,
+                  489,
+                  1293,
+                  1044,
+                  995,
+                  87,
+                  1280,
+                  137,
+                  1604,
+                  1009,
+                  924,
+                  246,
+                  779
+                ]
+              ],
+              [
+                [
+                  1039,
+                  1871,
+                  236,
+                  145,
+                  1228,
+                  1155,
+                  1215,
+                  1149,
+                  1333,
+                  743,
+                  1615,
+                  527,
+                  1749,
+                  812,
+                  1442
+                ]
+              ],
+              [
+                [
+                  1677,
+                  604,
+                  247,
+                  76,
+                  1425,
+                  1631,
+                  1508,
+                  1356,
+                  2007,
+                  743,
+                  949,
+                  783,
+                  344,
+                  85,
+                  1668
+                ]
+              ],
+              [
+                [
+                  117,
+                  928,
+                  864,
+                  1430,
+                  881,
+                  1681,
+                  1252,
+                  1440,
+                  844,
+                  743,
+                  1047,
+                  706,
+                  1484,
+                  1845,
+                  1978
+                ]
+              ],
+              [
+                [
+                  117,
+                  928,
+                  1527,
+                  314,
+                  406,
+                  1681,
+                  1252,
+                  734,
+                  1333,
+                  743,
+                  1603,
+                  706,
+                  1956,
+                  1845,
+                  1978
+                ]
+              ],
+              [
+                [
+                  85,
+                  2025,
+                  575,
+                  2,
+                  1506,
+                  1681,
+                  1252,
+                  564,
+                  905,
+                  288,
+                  1615,
+                  1108,
+                  344,
+                  1772,
+                  1978
+                ]
+              ],
+              [
+                [
+                  85,
+                  2025,
+                  575,
+                  2,
+                  1506,
+                  1681,
+                  1902,
+                  1694,
+                  1314,
+                  557,
+                  1047,
+                  1555,
+                  1956,
+                  812,
+                  901
+                ]
+              ],
+              [
+                [
+                  85,
+                  355,
+                  371,
+                  610,
+                  985,
+                  1636,
+                  1544,
+                  1025,
+                  1314,
+                  1241,
+                  1615,
+                  783,
+                  344,
+                  1845,
+                  803
+                ]
+              ],
+              [
+                [
+                  85,
+                  355,
+                  310,
+                  625,
+                  881,
+                  1960,
+                  278,
+                  930,
+                  1179,
+                  1846,
+                  990,
+                  896,
+                  344,
+                  82,
+                  803
+                ]
+              ],
+              [
+                [
+                  1230,
+                  1300,
+                  553,
+                  1642,
+                  248,
+                  710,
+                  1214,
+                  615,
+                  1764,
+                  1933,
+                  1042,
+                  320,
+                  382,
+                  584,
+                  547
+                ]
+              ],
+              [
+                [
+                  133,
+                  782,
+                  261,
+                  671,
+                  684,
+                  1429,
+                  386,
+                  352,
+                  1943,
+                  616,
+                  687,
+                  1761,
+                  1945,
+                  1514,
+                  1786
+                ]
+              ],
+              [
+                [
+                  596,
+                  1186,
+                  405,
+                  1232,
+                  1290,
+                  1574,
+                  1997,
+                  1838,
+                  1562,
+                  168,
+                  1655,
+                  654,
+                  73,
+                  470,
+                  1495
+                ]
+              ],
+              [
+                [
+                  1336,
+                  870,
+                  1774,
+                  22,
+                  1375,
+                  1803,
+                  980,
+                  3,
+                  578,
+                  1133,
+                  1792,
+                  555,
+                  1467,
+                  487,
+                  89
+                ]
+              ],
+              [
+                [
+                  993,
+                  1964,
+                  1007,
+                  1631,
+                  25,
+                  1713,
+                  634,
+                  265,
+                  572,
+                  160,
+                  899,
+                  2029,
+                  1728,
+                  1092,
+                  1887
+                ]
+              ],
+              [
+                [
+                  125,
+                  1264,
+                  354,
+                  405,
+                  778,
+                  986,
+                  586,
+                  1604,
+                  366,
+                  1038,
+                  1495,
+                  374,
+                  72,
+                  100,
+                  813
+                ]
+              ],
+              [
+                [
+                  1,
+                  760,
+                  1553,
+                  87,
+                  1764,
+                  1832,
+                  542,
+                  1562,
+                  1131,
+                  277,
+                  1181,
+                  524,
+                  1321,
+                  1135,
+                  1704
+                ]
+              ],
+              [
+                [
+                  1915,
+                  294,
+                  2007,
+                  574,
+                  147,
+                  927,
+                  197,
+                  21,
+                  312,
+                  148,
+                  53,
+                  1022,
+                  1143,
+                  1189,
+                  1625
+                ]
+              ],
+              [
+                [
+                  1138,
+                  95,
+                  279,
+                  192,
+                  106,
+                  878,
+                  654,
+                  956,
+                  556,
+                  1102,
+                  151,
+                  163,
+                  1750,
+                  1201,
+                  139
+                ]
+              ],
+              [
+                [
+                  1074,
+                  59,
+                  669,
+                  114,
+                  1355,
+                  510,
+                  509,
+                  1231,
+                  44,
+                  25,
+                  1350,
+                  197,
+                  332,
+                  299,
+                  735
+                ]
+              ],
+              [
+                [
+                  923,
+                  862,
+                  1021,
+                  971,
+                  1570,
+                  28,
+                  410,
+                  117,
+                  1691,
+                  906,
+                  790,
+                  333,
+                  1178,
+                  1212,
+                  1472
+                ]
+              ],
+              [
+                [
+                  125,
+                  1885,
+                  1713,
+                  405,
+                  1252,
+                  1157,
+                  247,
+                  1214,
+                  1054,
+                  105,
+                  783,
+                  700,
+                  552,
+                  198,
+                  1700
+                ]
+              ],
+              [
+                [
+                  155,
+                  1940,
+                  873,
+                  395,
+                  563,
+                  1015,
+                  152,
+                  1855,
+                  1479,
+                  297,
+                  958,
+                  1318,
+                  1661,
+                  402,
+                  1942
+                ]
+              ],
+              [
+                [
+                  1818,
+                  477,
+                  666,
+                  1315,
+                  135,
+                  677,
+                  410,
+                  11,
+                  1093,
+                  845,
+                  69,
+                  269,
+                  253,
+                  38,
+                  261
+                ]
+              ],
+              [
+                [
+                  969,
+                  795,
+                  1573,
+                  1560,
+                  1887,
+                  571,
+                  1444,
+                  674,
+                  1463,
+                  1840,
+                  2001,
+                  1616,
+                  1043,
+                  1170,
+                  1987
+                ]
+              ],
+              [
+                [
+                  1829,
+                  1253,
+                  406,
+                  1916,
+                  474,
+                  990,
+                  1528,
+                  5,
+                  407,
+                  1344,
+                  1631,
+                  1669,
+                  1064,
+                  1417,
+                  1650
+                ]
+              ],
+              [
+                [
+                  1915,
+                  1949,
+                  1543,
+                  1860,
+                  834,
+                  1127,
+                  1106,
+                  1690,
+                  1798,
+                  85,
+                  1000,
+                  435,
+                  1869,
+                  1034,
+                  324
+                ]
+              ],
+              [
+                [
+                  442,
+                  1323,
+                  690,
+                  1635,
+                  1144,
+                  1092,
+                  91,
+                  771,
+                  1963,
+                  1594,
+                  583,
+                  1027,
+                  1626,
+                  1927,
+                  65
+                ]
+              ],
+              [
+                [
+                  1597,
+                  477,
+                  232,
+                  456,
+                  1160,
+                  80,
+                  75,
+                  1615,
+                  444,
+                  841,
+                  1251,
+                  450,
+                  779,
+                  288,
+                  331
+                ]
+              ],
+              [
+                [
+                  814,
+                  1727,
+                  272,
+                  993,
+                  990,
+                  1457,
+                  899,
+                  617,
+                  1416,
+                  811,
+                  864,
+                  424,
+                  278,
+                  271,
+                  169
+                ]
+              ],
+              [
+                [
+                  1305,
+                  1825,
+                  297,
+                  466,
+                  651,
+                  1396,
+                  541,
+                  1521,
+                  687,
+                  210,
+                  253,
+                  654,
+                  1780,
+                  420,
+                  434
+                ]
+              ],
+              [
+                [
+                  307,
+                  1131,
+                  777,
+                  1159,
+                  1226,
+                  1663,
+                  532,
+                  1836,
+                  1967,
+                  797,
+                  85,
+                  702,
+                  1348,
+                  511,
+                  1684
+                ]
+              ],
+              [
+                [
+                  846,
+                  170,
+                  790,
+                  1865,
+                  383,
+                  1502,
+                  479,
+                  115,
+                  719,
+                  928,
+                  1602,
+                  267,
+                  174,
+                  813,
+                  1537
+                ]
+              ],
+              [
+                [
+                  1373,
+                  1692,
+                  539,
+                  807,
+                  562,
+                  795,
+                  654,
+                  1770,
+                  971,
+                  276,
+                  709,
+                  54,
+                  189,
+                  1859,
+                  1307
+                ]
+              ],
+              [
+                [
+                  750,
+                  1018,
+                  219,
+                  1596,
+                  220,
+                  1261,
+                  672,
+                  206,
+                  1806,
+                  1134,
+                  251,
+                  1205,
+                  1207,
+                  364,
+                  1003
+                ]
+              ],
+              [
+                [
+                  1301,
+                  1045,
+                  1135,
+                  613,
+                  796,
+                  2037,
+                  368,
+                  1600,
+                  1196,
+                  780,
+                  521,
+                  239,
+                  388,
+                  1534,
+                  1943
+                ]
+              ],
+              [
+                [
+                  638,
+                  1991,
+                  1639,
+                  1935,
+                  395,
+                  184,
+                  1840,
+                  2016,
+                  1006,
+                  45,
+                  971,
+                  1583,
+                  1930,
+                  1805,
+                  1017
+                ]
+              ],
+              [
+                [
+                  1065,
+                  119,
+                  624,
+                  731,
+                  1567,
+                  821,
+                  732,
+                  518,
+                  976,
+                  708,
+                  308,
+                  749,
+                  476,
+                  656,
+                  564
+                ]
+              ],
+              [
+                [
+                  1815,
+                  1595,
+                  1025,
+                  249,
+                  784,
+                  694,
+                  1629,
+                  512,
+                  155,
+                  895,
+                  1301,
+                  1372,
+                  718,
+                  999,
+                  122
+                ]
+              ]
+            ],
+            "trace_logits": [],
+            "trace_cache": [],
+            "trace_hidden": [],
+            "request_batches": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "slot_batches": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "padded_slots": 0,
+            "slot_count": 2,
+            "batch_window_ms": 0.0
+          },
+          "outer_talker": {},
+          "stream_batch_gate": {
+            "native_batches": 0,
+            "scalar_fallback_batches": 0,
+            "scalar_fallback_requests": 0
+          },
+          "remote": "127.0.0.1:18766"
+        }
+      },
+      "derived_ms": {
+        "llm_ttft": 54.8,
+        "llm_to_first_tts_text": 66.4,
+        "tts_wait": 374.5,
+        "tts_compute_wait": 374.4,
+        "tts_release_delay": 0.1,
+        "committed_lead_vs_final": 7385.3,
+        "first_audio_after_input_end": 498.2
+      }
+    }
+  }
+}

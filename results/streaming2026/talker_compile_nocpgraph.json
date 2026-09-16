@@ -1,0 +1,37 @@
+{
+  "device": "cuda:1",
+  "repeats": 3,
+  "cuda_graph_code_predictor": false,
+  "arms": {
+    "default": {
+      "warmup_ms": 265478.6,
+      "ms": [
+        12612.0,
+        12610.4,
+        13355.9
+      ],
+      "rtf": 2.388,
+      "speedup": 1.004,
+      "audio_matches": true
+    },
+    "max-autotune-no-cudagraphs": {
+      "warmup_ms": 439500.7,
+      "ms": [
+        12922.1,
+        13028.6,
+        13345.9
+      ],
+      "rtf": 2.447,
+      "speedup": 0.98,
+      "audio_matches": true
+    }
+  },
+  "eager_ms": [
+    12662.2,
+    12702.6,
+    13805.2
+  ],
+  "eager_sha": "c27db91e83a9b182",
+  "audio_ms": 5280.0,
+  "eager_rtf": 2.398
+}

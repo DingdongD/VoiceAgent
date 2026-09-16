@@ -1,0 +1,37 @@
+=== ARM A_baseline (LLM_ENFORCE_EAGER=true) extra:  ===
+0, 37850 MiB
+1, 37850 MiB
+2, 37850 MiB
+3, 37850 MiB
+exit=0 -> results/streaming2026/arm_A_baseline.log
+=== ARM B_llmgraph (LLM_ENFORCE_EAGER=false) extra:  ===
+0, 37850 MiB
+1, 37850 MiB
+2, 37850 MiB
+3, 37850 MiB
+exit=0 -> results/streaming2026/arm_B_llmgraph.log
+=== ARM C_ttsstream (LLM_ENFORCE_EAGER=false) extra: --tts-streaming-engine codec-step ===
+0, 37850 MiB
+1, 37850 MiB
+2, 37850 MiB
+3, 37850 MiB
+exit=0 -> results/streaming2026/arm_C_ttsstream.log
+=== ARM D_ttsgraph (LLM_ENFORCE_EAGER=false) extra: --tts-streaming-engine codec-step --tts-cuda-graph-code-predictor --tts-cuda-graph-fixed-slots 2 --tts-outer-active-prefix-talker-engine --no-tts-stream-batch-exact-parity --no-tts-do-sample --no-tts-subtalker-do-sample --tts-temperature 0.0 ===
+0, 37850 MiB
+1, 37850 MiB
+2, 37850 MiB
+3, 37850 MiB
+exit=0 -> results/streaming2026/arm_D_ttsgraph.log
+=== ARM E_segment (LLM_ENFORCE_EAGER=false) extra: --tts-streaming-engine codec-step --tts-cuda-graph-code-predictor --tts-cuda-graph-fixed-slots 2 --tts-outer-active-prefix-talker-engine --no-tts-stream-batch-exact-parity --no-tts-do-sample --no-tts-subtalker-do-sample --tts-temperature 0.0 --tts-flush-chars 12 --tts-flush-after-ms 250 --tts-flush-min-chars 5 --tts-first-sentence-immediate ===
+0, 37850 MiB
+1, 37850 MiB
+2, 37850 MiB
+3, 37850 MiB
+exit=0 -> results/streaming2026/arm_E_segment.log
+=== ARM F_asrincr (LLM_ENFORCE_EAGER=false) extra: --tts-streaming-engine codec-step --tts-cuda-graph-code-predictor --tts-cuda-graph-fixed-slots 2 --tts-outer-active-prefix-talker-engine --no-tts-stream-batch-exact-parity --no-tts-do-sample --no-tts-subtalker-do-sample --tts-temperature 0.0 --tts-flush-chars 12 --tts-flush-after-ms 250 --tts-flush-min-chars 5 --tts-first-sentence-immediate --asr-policy incremental --commit-lag-words 2 ===
+0, 37850 MiB
+1, 37850 MiB
+2, 37850 MiB
+3, 37850 MiB
+exit=0 -> results/streaming2026/arm_F_asrincr.log
+LADDER COMPLETE

@@ -1,0 +1,293 @@
+{
+  "stage": "qwen_tts_internal_profile",
+  "model_path": "/mnt/llm_data/voice_ckpt/qwen3_tts/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "device": "cuda:1",
+  "language": "chinese",
+  "speaker": "",
+  "texts": [
+    "Yes, the boy wills the item, and Montfiche feels too ill to oppose it."
+  ],
+  "batch_sizes": [
+    1
+  ],
+  "chunk_size": 8,
+  "left_context_size": 4,
+  "max_new_tokens": null,
+  "non_streaming_mode": true,
+  "sync_each_step": false,
+  "warmup": true,
+  "status": "failure",
+  "warnings": [],
+  "errors": [
+    "OuterTalkerEngineError: requested prompt and decode tokens exceed static cache capacity"
+  ],
+  "cache_overflow": true,
+  "fast_code_predictor": false,
+  "static_code_predictor": false,
+  "cuda_graph_code_predictor": true,
+  "cuda_graph_fixed_slots": 2,
+  "cuda_graph_batch_window_ms": 0.0,
+  "fast_code_predictor_batch_window_ms": 0.0,
+  "fast_code_predictor_max_batch_size": 8,
+  "outer_engine": "active_prefix",
+  "outer_static_talker_engine": false,
+  "outer_active_prefix_talker_engine": true,
+  "outer_graph_max_cache_len": 8192,
+  "outer_cuda_graph_talker_engine": false,
+  "outer_graph_fixed_slots": 2,
+  "outer_graph_fuse_qkv": false,
+  "outer_graph_fuse_attention": false,
+  "outer_graph_fused_projection_kernel": false,
+  "outer_graph_fusion_policy": "allow",
+  "outer_graph_fusion_max_abs_error": 0.002,
+  "outer_graph_fusion_max_relative_l2": 0.0002,
+  "explicit_talker_step_engine": false,
+  "compile_step_engine": false,
+  "compile_step_engine_mode": "reduce-overhead",
+  "seed": 0,
+  "greedy": true,
+  "runtime_metrics": {
+    "code_predictor": {
+      "graph_captures": 2,
+      "graph_replays": 8,
+      "lazy_captures": 0,
+      "bundles": 2,
+      "bundle_keys": [
+        "((1, 2, 2048), 'cuda:1', 'torch.float16', True, 15)",
+        "((2, 2, 2048), 'cuda:1', 'torch.float16', True, 15)"
+      ],
+      "steady_state": true,
+      "closed": false,
+      "trace_tokens": [
+        "0a2a724fef593feb52db0bdffad29e0b007e95a86e734e0be707a4cc60ae57a3",
+        "fde6ac016165a010df7b5eebdd75b7679050222cde7672b6efebc1c1badfc3b6",
+        "9f6bebd769a51ee7b6d03190ddbd2d8e66ec62dc96c2b55b54af0ba8913488ac",
+        "635b6e31fd74f39746cd3d94f10dc742b5e35d208c07275a367deaafb4652765",
+        "688b39763c296b6c532b370c5d70cd4a6700f665c455adc85dbcf62ee0fafd23",
+        "2a449dfd4f024eb465de1a5b43d19a7f263eb71c54b2eb3d5c46767873e111c9",
+        "f66fe5e80527ae52bf8dd6d452dc4ee4effb81ad4c722823aca6c9ddc8d5ab51",
+        "a7ecbebf8baeb13d42f07e5c0a0c54c774e8f6891fa1828be24a96848a6409ba"
+      ],
+      "trace_token_values": [
+        [
+          [
+            1159,
+            355,
+            22,
+            1174,
+            1093,
+            625,
+            1814,
+            1058,
+            905,
+            1846,
+            1247,
+            1677,
+            889,
+            812,
+            901
+          ]
+        ],
+        [
+          [
+            1462,
+            357,
+            1920,
+            918,
+            19,
+            1966,
+            994,
+            475,
+            1487,
+            359,
+            1442,
+            1521,
+            1307,
+            118,
+            159
+          ]
+        ],
+        [
+          [
+            334,
+            600,
+            1124,
+            1538,
+            1681,
+            228,
+            69,
+            1937,
+            230,
+            1455,
+            1987,
+            1784,
+            1175,
+            164,
+            708
+          ]
+        ],
+        [
+          [
+            177,
+            1517,
+            262,
+            616,
+            964,
+            372,
+            369,
+            484,
+            944,
+            1977,
+            1970,
+            1426,
+            836,
+            1409,
+            826
+          ]
+        ],
+        [
+          [
+            1255,
+            633,
+            1734,
+            105,
+            1776,
+            1119,
+            465,
+            1824,
+            109,
+            517,
+            1100,
+            15,
+            970,
+            1112,
+            644
+          ]
+        ],
+        [
+          [
+            1476,
+            1740,
+            1741,
+            1757,
+            207,
+            1251,
+            692,
+            1369,
+            1490,
+            1103,
+            155,
+            407,
+            217,
+            1441,
+            96
+          ]
+        ],
+        [
+          [
+            959,
+            1876,
+            1483,
+            1745,
+            1125,
+            1296,
+            237,
+            173,
+            191,
+            191,
+            1125,
+            1062,
+            1772,
+            149,
+            19
+          ]
+        ],
+        [
+          [
+            1499,
+            634,
+            1120,
+            1377,
+            435,
+            1403,
+            928,
+            2043,
+            1000,
+            97,
+            1486,
+            307,
+            66,
+            437,
+            469
+          ]
+        ]
+      ],
+      "trace_logits": [],
+      "trace_cache": [],
+      "trace_hidden": [],
+      "request_batches": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "slot_batches": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "padded_slots": 0,
+      "slot_count": 2,
+      "batch_window_ms": 0.0
+    },
+    "outer_talker": {
+      "prefill_calls": 1,
+      "static_steps_by_batch": {
+        "1": 8
+      },
+      "active_slots_per_step": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "slot_occupancy": 1.0,
+      "errors": 1,
+      "cache_allocations": 1,
+      "allocated_kv_bytes": 939524096,
+      "active_kv_tokens_per_step": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "backing_capacity_tokens": 8192,
+      "active_capacity_ratio": 0.00201416015625,
+      "cache_resets": 2,
+      "cache_overflows": 0
+    },
+    "stream_batch_gate": {
+      "native_batches": 0,
+      "scalar_fallback_batches": 0,
+      "scalar_fallback_requests": 0
+    }
+  },
+  "reports": []
+}

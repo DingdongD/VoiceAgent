@@ -1,0 +1,119 @@
+{
+  "torch_version": "2.5.1+cu121",
+  "device_count": 4,
+  "matmul_size": 8192,
+  "smi_before": [
+    {
+      "index": 0,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 193.51,
+      "temperature_c": 82
+    },
+    {
+      "index": 1,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 0.0,
+      "temperature_c": 80
+    },
+    {
+      "index": 2,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 213.16,
+      "temperature_c": 81
+    },
+    {
+      "index": 3,
+      "memory_used_mib": 2488,
+      "memory_free_mib": 37850,
+      "utilization_percent": 100,
+      "power_draw_w": 0.0,
+      "temperature_c": 83
+    }
+  ],
+  "devices": [
+    {
+      "index": 0,
+      "tflops_samples": [
+        74.11,
+        83.54,
+        90.33
+      ],
+      "tflops_best": 90.33,
+      "tflops_median": 83.54,
+      "relative_to_best": 0.96
+    },
+    {
+      "index": 1,
+      "tflops_samples": [
+        77.14,
+        89.95,
+        90.03
+      ],
+      "tflops_best": 90.03,
+      "tflops_median": 89.95,
+      "relative_to_best": 0.957
+    },
+    {
+      "index": 2,
+      "tflops_samples": [
+        85.93,
+        94.12,
+        93.85
+      ],
+      "tflops_best": 94.12,
+      "tflops_median": 93.85,
+      "relative_to_best": 1.0
+    },
+    {
+      "index": 3,
+      "tflops_samples": [
+        80.09,
+        90.81,
+        90.24
+      ],
+      "tflops_best": 90.81,
+      "tflops_median": 90.24,
+      "relative_to_best": 0.965
+    }
+  ],
+  "smi_after": [
+    {
+      "index": 0,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 100,
+      "power_draw_w": 199.67,
+      "temperature_c": 82
+    },
+    {
+      "index": 1,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 100,
+      "power_draw_w": 0.0,
+      "temperature_c": 81
+    },
+    {
+      "index": 2,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 53,
+      "power_draw_w": 95.06,
+      "temperature_c": 78
+    },
+    {
+      "index": 3,
+      "memory_used_mib": 2946,
+      "memory_free_mib": 37393,
+      "utilization_percent": 42,
+      "power_draw_w": 0.0,
+      "temperature_c": 80
+    }
+  ]
+}

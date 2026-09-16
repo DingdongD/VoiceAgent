@@ -1,0 +1,4 @@
+prefix_cache2k exit=1
+prefix_cache4k exit=1
+prefix_cache8k exit=1
+TTSRTF4_COMPLETE

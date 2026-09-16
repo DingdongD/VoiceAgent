@@ -1,0 +1,15 @@
+=== ARM N_naive_sync : --real-target sync --runtime-profile compat --llm-trigger final --tts-max-new-tokens 64 ===
+exit=0 -> results/streaming2026/arm_N_naive_sync.log
+=== ARM S_chunk200 : --real-target async --runtime-profile low-latency --llm-trigger committed --tts-max-new-tokens 64 --chunk-ms 200 ===
+exit=0 -> results/streaming2026/arm_S_chunk200.log
+=== ARM S_chunk800 : --real-target async --runtime-profile low-latency --llm-trigger committed --tts-max-new-tokens 64 --chunk-ms 800 ===
+exit=0 -> results/streaming2026/arm_S_chunk800.log
+=== ARM S_chunk1600 : --real-target async --runtime-profile low-latency --llm-trigger committed --tts-max-new-tokens 64 --chunk-ms 1600 ===
+exit=0 -> results/streaming2026/arm_S_chunk1600.log
+=== ARM S_retrans : --real-target async --runtime-profile low-latency --llm-trigger committed --tts-max-new-tokens 64 --chunk-ms 800 --asr-policy retranscribe ===
+exit=0 -> results/streaming2026/arm_S_retrans.log
+=== ARM S_lag2 : --real-target async --runtime-profile low-latency --llm-trigger committed --tts-max-new-tokens 64 --chunk-ms 800 --commit-lag-words 2 --min-committed-words 3 ===
+exit=0 -> results/streaming2026/arm_S_lag2.log
+=== ARM R_realtime : --real-target async --runtime-profile low-latency --llm-trigger committed --tts-max-new-tokens 64 --chunk-ms 400 --realtime-input ===
+exit=0 -> results/streaming2026/arm_R_realtime.log
+ASR_SWEEP COMPLETE

@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen-asr-vllm"
+version = "0.1.0"
+description = "Self-contained Qwen3-ASR inference engine with continuous batching for audio"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.4",
+    "transformers>=4.51",
+    "safetensors>=0.4",
+    "numpy>=1.24",
+    "xxhash>=3.4",
+    "soundfile>=0.12",
+    "librosa>=0.10",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+# flash-attn is not declared as a hard dependency because it needs to be matched
+# against the local torch/CUDA build. The engine refuses to start without it.
+bench = [
+    "datasets>=3.0",
+    "jiwer>=3.0",
+    "pyyaml>=6.0",
+]
+serve = [
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "python-multipart>=0.0.9",
+]
+test = [
+    "pytest>=7.4",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+qwen-asr-vllm = "qwen_asr_vllm.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["qwen_asr_vllm*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+# A verbatim copy of the upstream modeling code, kept as a numerical oracle. Its
+# style is not ours to change: any edit weakens it as a reference.
+extend-exclude = ["reference"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "gpu: needs a CUDA device and flash-attn",
+    "checkpoint: needs the Qwen3-ASR weights on disk",
+    "dataset: needs the long-form audio shards on disk",
+    "slow: takes more than a few seconds",
+]

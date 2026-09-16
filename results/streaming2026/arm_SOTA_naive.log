@@ -1,0 +1,523 @@
+The tokenizer you are loading from '/mnt/llm_data/voice_ckpt/Qwen3-ASR-0.6B' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+{
+  "async": {
+    "name": "real_async_final_processes",
+    "first_audio_ms": 15870.3,
+    "total_ms": 15872.3,
+    "events": [
+      "turn_listening",
+      "asr_partial",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_final",
+      "turn_thinking",
+      "llm_start",
+      "llm_first_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_sentence_ready",
+      "llm_done",
+      "tts_audio_ready",
+      "tts_first_chunk",
+      "turn_speaking",
+      "tts_chunk",
+      "done",
+      "turn_listening"
+    ],
+    "errors": [],
+    "event_offsets_ms": {
+      "turn_listening": 1.4,
+      "asr_partial": 130.1,
+      "asr_committed": 385.4,
+      "asr_final": 2710.0,
+      "turn_thinking": 2710.2,
+      "llm_start": 2710.2,
+      "llm_first_chunk": 2761.1,
+      "llm_chunk": 2761.2,
+      "llm_sentence_ready": 2965.2,
+      "llm_done": 2974.3,
+      "tts_audio_ready": 15869.7,
+      "tts_first_chunk": 15870.1,
+      "turn_speaking": 15870.2,
+      "tts_chunk": 15870.3,
+      "done": 15870.5
+    },
+    "details": {
+      "tts_chunk_timeline": [
+        {
+          "at_ms": 15870.3,
+          "audio_ms": 4880.0
+        }
+      ],
+      "asr_timeline": [
+        {
+          "at_ms": 130.1,
+          "kind": "partial",
+          "text": "",
+          "committed": ""
+        },
+        {
+          "at_ms": 269.0,
+          "kind": "partial",
+          "text": "Have.",
+          "committed": ""
+        },
+        {
+          "at_ms": 385.3,
+          "kind": "partial",
+          "text": "Have your.",
+          "committed": "Have"
+        },
+        {
+          "at_ms": 385.4,
+          "kind": "committed",
+          "text": "Have",
+          "committed": "Have"
+        },
+        {
+          "at_ms": 502.2,
+          "kind": "partial",
+          "text": "Have your will.",
+          "committed": "Have your"
+        },
+        {
+          "at_ms": 502.4,
+          "kind": "committed",
+          "text": "Have your",
+          "committed": "Have your"
+        },
+        {
+          "at_ms": 624.4,
+          "kind": "partial",
+          "text": "Have your will, child.",
+          "committed": "Have your will,"
+        },
+        {
+          "at_ms": 624.6,
+          "kind": "committed",
+          "text": "Have your will,",
+          "committed": "Have your will,"
+        },
+        {
+          "at_ms": 753.0,
+          "kind": "partial",
+          "text": "Have your will, child. If the.",
+          "committed": "Have your will, child. If"
+        },
+        {
+          "at_ms": 753.2,
+          "kind": "committed",
+          "text": "Have your will, child. If",
+          "committed": "Have your will, child. If"
+        },
+        {
+          "at_ms": 873.1,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy all.",
+          "committed": "Have your will, child. If the boy"
+        },
+        {
+          "at_ms": 873.2,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy",
+          "committed": "Have your will, child. If the boy"
+        },
+        {
+          "at_ms": 1004.2,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also will.",
+          "committed": "Have your will, child. If the boy also"
+        },
+        {
+          "at_ms": 1004.4,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also",
+          "committed": "Have your will, child. If the boy also"
+        },
+        {
+          "at_ms": 1126.7,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it.",
+          "committed": "Have your will, child. If the boy also wills"
+        },
+        {
+          "at_ms": 1126.9,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills",
+          "committed": "Have your will, child. If the boy also wills"
+        },
+        {
+          "at_ms": 1233.5,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it.",
+          "committed": "Have your will, child. If the boy also wills"
+        },
+        {
+          "at_ms": 1402.1,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet.",
+          "committed": "Have your will, child. If the boy also wills it,"
+        },
+        {
+          "at_ms": 1402.2,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it,",
+          "committed": "Have your will, child. If the boy also wills it,"
+        },
+        {
+          "at_ms": 1508.9,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet"
+        },
+        {
+          "at_ms": 1509.1,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet"
+        },
+        {
+          "at_ms": 1632.5,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered,"
+        },
+        {
+          "at_ms": 1632.6,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered,",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered,"
+        },
+        {
+          "at_ms": 1752.3,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too"
+        },
+        {
+          "at_ms": 1752.5,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too"
+        },
+        {
+          "at_ms": 1859.3,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill"
+        },
+        {
+          "at_ms": 1859.5,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill"
+        },
+        {
+          "at_ms": 1971.3,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to"
+        },
+        {
+          "at_ms": 1971.4,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to"
+        },
+        {
+          "at_ms": 2079.0,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 2079.2,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose"
+        },
+        {
+          "at_ms": 2206.0,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strong.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very"
+        },
+        {
+          "at_ms": 2206.2,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very"
+        },
+        {
+          "at_ms": 2314.0,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very"
+        },
+        {
+          "at_ms": 2435.5,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just then.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just"
+        },
+        {
+          "at_ms": 2435.7,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just"
+        },
+        {
+          "at_ms": 2708.7,
+          "kind": "partial",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just"
+        },
+        {
+          "at_ms": 2708.8,
+          "kind": "committed",
+          "text": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just"
+        },
+        {
+          "at_ms": 2710.0,
+          "kind": "final",
+          "text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+          "committed": "Have your will, child. If the boy also wills it, Montfichet answered, feeling too ill to oppose anything very strongly just"
+        }
+      ],
+      "asr_hypothesis": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "llm_prompt": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "asr_final_text": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "llm_output": "Yes, the boy wills the item, and Montfiche feels too ill to oppose it.",
+      "tts_inputs": [
+        "Yes, the boy wills the item, and Montfiche feels too ill to oppose it."
+      ],
+      "tts_rendered_inputs": [
+        "Yes, the boy wills the item, and Montfiche feels too ill to oppose it."
+      ],
+      "tts_streaming": false,
+      "first_audio_bytes": 234284,
+      "tts_chunk_count": 1,
+      "tts_audio_bytes": 234284,
+      "tts_audio_duration_ms": 4880.0,
+      "input_wall_ms": 2708.0,
+      "input_audio_ms": 8250.0,
+      "gpu_state": [
+        {
+          "index": 0,
+          "memory_used_mib": 8951,
+          "memory_free_mib": 31387,
+          "utilization_percent": 100,
+          "power_draw_w": 180.04,
+          "temperature_c": 83,
+          "clock_sm_mhz": 660,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.468,
+          "throttle_reasons": [
+            "sw_thermal_slowdown"
+          ]
+        },
+        {
+          "index": 1,
+          "memory_used_mib": 8008,
+          "memory_free_mib": 32331,
+          "utilization_percent": 100,
+          "power_draw_w": 0.0,
+          "temperature_c": 84,
+          "clock_sm_mhz": 900,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.638,
+          "throttle_reasons": [
+            "sw_thermal_slowdown"
+          ]
+        },
+        {
+          "index": 2,
+          "memory_used_mib": 6182,
+          "memory_free_mib": 34157,
+          "utilization_percent": 100,
+          "power_draw_w": 195.56,
+          "temperature_c": 82,
+          "clock_sm_mhz": 750,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.532,
+          "throttle_reasons": [
+            "sw_thermal_slowdown"
+          ]
+        },
+        {
+          "index": 3,
+          "memory_used_mib": 2488,
+          "memory_free_mib": 37850,
+          "utilization_percent": 100,
+          "power_draw_w": 0.0,
+          "temperature_c": 84,
+          "clock_sm_mhz": 690,
+          "clock_max_sm_mhz": 1410,
+          "clock_ratio": 0.489,
+          "throttle_reasons": [
+            "sw_thermal_slowdown"
+          ]
+        }
+      ],
+      "event_last_offsets_ms": {
+        "turn_listening": 15870.9,
+        "asr_partial": 2708.7,
+        "asr_committed": 2708.8,
+        "asr_final": 2710.0,
+        "turn_thinking": 2710.2,
+        "llm_start": 2710.2,
+        "llm_first_chunk": 2761.1,
+        "llm_chunk": 2965.1,
+        "llm_sentence_ready": 2965.2,
+        "llm_done": 2974.3,
+        "tts_audio_ready": 15869.7,
+        "tts_first_chunk": 15870.1,
+        "turn_speaking": 15870.2,
+        "tts_chunk": 15870.3,
+        "done": 15870.5
+      },
+      "resident_services": {
+        "asr": {
+          "pid": 281612,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:0",
+            "allocated_bytes": 5361522176,
+            "reserved_bytes": 5460983808,
+            "peak_allocated_bytes": 5364899328,
+            "device_used_bytes": 8734638080,
+            "device_free_bytes": 33564196864,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {}
+        },
+        "llm": {
+          "pid": 282055,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:2",
+            "allocated_bytes": 3117698560,
+            "reserved_bytes": 3198156800,
+            "peak_allocated_bytes": 3118619136,
+            "device_used_bytes": 6480199680,
+            "device_free_bytes": 35818635264,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {
+            "online": {
+              "step_calls": 0,
+              "max_step_batch_size": 0
+            },
+            "warmup": {
+              "batch_sizes": [
+                1
+              ],
+              "step_calls": 1,
+              "max_step_batch_size": 1
+            }
+          }
+        },
+        "tts": {
+          "pid": 282430,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:0",
+            "allocated_bytes": 0,
+            "reserved_bytes": 0,
+            "peak_allocated_bytes": 0,
+            "device_used_bytes": 9174581248,
+            "device_free_bytes": 33124253696,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {
+            "code_predictor": {},
+            "outer_talker": {},
+            "stream_batch_gate": {
+              "native_batches": 0,
+              "scalar_fallback_batches": 0,
+              "scalar_fallback_requests": 0
+            }
+          },
+          "shared_memory": {
+            "created_segments": 0,
+            "created_bytes": 0,
+            "received_segments": 1,
+            "received_bytes": 234284,
+            "unlinked_segments": 1,
+            "cleanup_segments": 0,
+            "outstanding_segments": 0,
+            "threshold": 65536
+          }
+        }
+      },
+      "derived_ms": {
+        "llm_ttft": 50.9,
+        "llm_to_first_tts_text": 204.1,
+        "tts_wait": 12904.8,
+        "tts_compute_wait": 12904.5,
+        "tts_release_delay": 0.3,
+        "committed_lead_vs_final": 2324.7,
+        "first_audio_after_input_end": 13162.1
+      }
+    }
+  }
+}

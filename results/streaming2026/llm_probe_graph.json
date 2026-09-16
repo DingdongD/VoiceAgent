@@ -1,0 +1,23 @@
+{
+  "concurrency": 1,
+  "wall_ms": 212.1,
+  "requests": [
+    {
+      "first_token_ms": 42.0,
+      "total_ms": 211.5,
+      "chunks": 16,
+      "chars": 26
+    }
+  ],
+  "backend_stats": {
+    "step_calls": 17,
+    "max_step_batch_size": 1
+  },
+  "warmup_stats": {
+    "batch_sizes": [
+      1
+    ],
+    "step_calls": 1,
+    "max_step_batch_size": 1
+  }
+}

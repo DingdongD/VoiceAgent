@@ -1,0 +1,208 @@
+The tokenizer you are loading from '/mnt/llm_data/voice_ckpt/Qwen3-ASR-0.6B' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+{
+  "async": {
+    "name": "real_async_committed_processes",
+    "first_audio_ms": 2672.8,
+    "total_ms": 8445.1,
+    "events": [
+      "turn_listening",
+      "asr_partial",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "turn_thinking",
+      "llm_start",
+      "llm_first_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "asr_partial",
+      "asr_committed",
+      "llm_chunk",
+      "llm_sentence_ready",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_chunk",
+      "llm_sentence_ready",
+      "llm_done",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_partial",
+      "asr_committed",
+      "asr_partial",
+      "asr_committed",
+      "asr_final",
+      "tts_audio_ready",
+      "tts_first_chunk",
+      "turn_speaking",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "tts_chunk",
+      "done",
+      "turn_listening"
+    ],
+    "errors": [],
+    "event_offsets_ms": {
+      "turn_listening": 1.2,
+      "asr_partial": 124.0,
+      "asr_committed": 369.2,
+      "turn_thinking": 369.3,
+      "llm_start": 369.4,
+      "llm_first_chunk": 413.2,
+      "llm_chunk": 413.3,
+      "llm_sentence_ready": 489.2,
+      "llm_done": 571.9,
+      "asr_final": 2626.3,
+      "tts_audio_ready": 2672.6,
+      "tts_first_chunk": 2672.7,
+      "turn_speaking": 2672.8,
+      "tts_chunk": 2672.8,
+      "done": 8444.1
+    },
+    "details": {
+      "asr_hypothesis": "Have your will, child. If the boy also wills it, Montfiche answered, feeling too ill to oppose anything very strongly just then.",
+      "llm_output": "Yes, I can help with that. What would you like to ask?",
+      "tts_inputs": [
+        "Yes, I can help with that.",
+        "What would you like to ask?"
+      ],
+      "tts_rendered_inputs": [
+        "Yes, I can help with that.",
+        "What would you like to ask?"
+      ],
+      "tts_streaming": true,
+      "first_audio_bytes": 30764,
+      "tts_chunk_count": 4,
+      "tts_audio_bytes": 119216,
+      "tts_audio_duration_ms": 2480.0,
+      "input_wall_ms": 2625.4,
+      "tts_codec_frames_estimate": 29.759999999999998,
+      "tts_codec_tokens_estimate": 476.15999999999997,
+      "tts_codec_tokens_per_s": 218.0874193110846,
+      "resident_services": {
+        "asr": {
+          "pid": 4079292,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:0",
+            "allocated_bytes": 5361522176,
+            "reserved_bytes": 5460983808,
+            "peak_allocated_bytes": 5364899328,
+            "device_used_bytes": 8734638080,
+            "device_free_bytes": 33564196864,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {}
+        },
+        "llm": {
+          "pid": 4079879,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:2",
+            "allocated_bytes": 3117698560,
+            "reserved_bytes": 3198156800,
+            "peak_allocated_bytes": 3118619136,
+            "device_used_bytes": 6480199680,
+            "device_free_bytes": 35818635264,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {
+            "online": {
+              "step_calls": 0,
+              "max_step_batch_size": 0
+            },
+            "warmup": {
+              "batch_sizes": [
+                1
+              ],
+              "step_calls": 1,
+              "max_step_batch_size": 1
+            }
+          }
+        },
+        "tts": {
+          "pid": 4080469,
+          "cuda_memory": {
+            "available": true,
+            "initialized": true,
+            "device": "cuda:0",
+            "allocated_bytes": 0,
+            "reserved_bytes": 0,
+            "peak_allocated_bytes": 0,
+            "device_used_bytes": 9174581248,
+            "device_free_bytes": 33124253696,
+            "device_total_bytes": 42298834944
+          },
+          "backend": {
+            "code_predictor": {},
+            "outer_talker": {},
+            "stream_batch_gate": {
+              "native_batches": 0,
+              "scalar_fallback_batches": 0,
+              "scalar_fallback_requests": 0
+            }
+          },
+          "shared_memory": {
+            "created_segments": 0,
+            "created_bytes": 0,
+            "received_segments": 0,
+            "received_bytes": 0,
+            "unlinked_segments": 0,
+            "cleanup_segments": 0,
+            "outstanding_segments": 0,
+            "threshold": 65536
+          }
+        }
+      },
+      "derived_ms": {
+        "llm_ttft": 43.8,
+        "llm_to_first_tts_text": 76.0,
+        "tts_wait": 2183.5,
+        "tts_compute_wait": 2183.3,
+        "tts_release_delay": 0.2,
+        "committed_lead_vs_final": 2257.1,
+        "first_audio_after_input_end": 47.3
+      }
+    }
+  }
+}

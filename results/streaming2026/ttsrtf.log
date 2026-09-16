@@ -1,0 +1,4 @@
+chunk8 exit=1
+chunk16 exit=1
+results/streaming2026/run_ttsrtf.sh: line 24: syntax error near unexpected token `&'
+results/streaming2026/run_ttsrtf.sh: line 24: `&1'
