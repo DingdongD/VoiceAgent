@@ -536,7 +536,7 @@ llm_backend = NanoVllmStepBatchingBackend(
 voice_factory = build_voice_factory(
     llm=llm_backend,             # nano-vLLM add_request/step batching backend
     tts=my_tts_backend,          # implements synthesize(text) -> encoded audio bytes
-    llm_trigger="final",         # or "committed" for lower latency
+    llm_trigger="final",         # answers the whole utterance; do not use committed
     asr_kwargs={"language": "en", "chunk_policy": "speculate"},
     async_mode=True,             # queue-driven resident runners + event queue
     tts_flush_chars=20,          # optional low-latency fragment flush
@@ -563,9 +563,11 @@ this repo, so the page shows the LLM text sent into TTS and the returned audio
 chunks with WAV duration/byte metadata.
 
 This is the migrated scheduling boundary from the old voice assistant app:
-LLM output is consumed as a stream, stable sentence fragments are sent to TTS, and
-ASR `committed` can trigger the LLM before finalization when the application accepts
-revision risk. `NanoVllmStepBatchingBackend` keeps one nano-vLLM engine resident
+LLM output is consumed as a stream and stable sentence fragments are sent to TTS.
+The LLM is triggered on ASR `final` so it answers the whole utterance.
+`--llm-trigger committed` is a research flag only: with the shipped gate it
+prompted the LLM with the first committed word of a 22-word utterance and never
+revised. `NanoVllmStepBatchingBackend` keeps one nano-vLLM engine resident
 and batches concurrent chat streams through `add_request`/`step`; `build_voice_factory`
 detects it as a resident runner and does not wrap it in the generic generator mux.
 
@@ -580,8 +582,9 @@ old app wrapper.
 
 ### Low-latency voice responses: use the `low-latency` profile
 
-The streaming path exists but shipped switched off. Turning it on is worth a
-sustainable TTS stage and a `2.8x` shorter turn, with no new kernel:
+The streaming path exists but shipped switched off. The profile that is safe to
+quote answers the **whole utterance** (`llm_trigger=final`), keeps the custom
+outer talker engines off, and turns on codec-step TTS:
 
 ```bash
 ASR_NUM_KVCACHE_BLOCKS=128 LLM_NUM_KVCACHE_BLOCKS=64 LLM_TEMPERATURE=0 \
@@ -590,18 +593,25 @@ ASR_NUM_KVCACHE_BLOCKS=128 LLM_NUM_KVCACHE_BLOCKS=64 LLM_TEMPERATURE=0 \
   --audio results/cuda0_librispeech_sample.wav
 ```
 
-On one 8.25s LibriSpeech turn (A100, ASR `cuda:0` / LLM `cuda:2` / TTS `cuda:1`),
-answering the whole utterance:
+Paired regression on this host, same 8.25 s LibriSpeech input, identical prompt
+and identical reply across arms. Quote the range, not a single ratio: the two
+naive arms already differ by `1.31x` from thermal drift.
 
-| metric | documented recipe | `low-latency` |
-|---|---|---|
-| first audio | 7007.6 ms | 1755.3 - 2221.7 ms |
-| total turn | 18399.9 ms | 5224.4 - 6556.3 ms |
-| TTS real-time factor | 3.0+ | **0.752 - 0.936** |
+| arm | first audio | total turn | tts_rtf | prompt == final transcript |
+|---|---|---|---|---|
+| naive (`compat`) | 15870.3 ms | 15872.3 ms | 2.644 | yes |
+| **`low-latency`** | **3602.2 ms** | **9968.9 ms** | **1.369** | **yes** |
+| naive (repeat) | 12142.8 ms | 12143.7 ms | 1.940 | yes |
+
+**First audio 3.37x–4.41x, total turn 1.22x–1.59x.** Withdrawn from earlier
+revisions of this page: `17.6x` / `31.7x` (one-word `committed` prompt),
+`8.2x–10.4x` (quiet candidate vs unrecorded-host baseline), and a `2.8x` table
+that mixed a cool-host TTS RTF of `0.752–0.936` with a different recipe.
 
 **A TTS real-time factor below 1.0 is the number that matters**, more than first
-audio: above 1.0 the agent falls further behind the longer it speaks, so no
-amount of first-audio tuning makes conversation sustainable.
+audio: above 1.0 the agent falls further behind the longer it speaks. On the
+throttled A100s in this chassis that factor stays about `1.3`. It drops below
+`1.0` when TTS runs on the edge 4090; see [Cloud-edge split](#cloud-edge-split).
 
 ### When TTS runs above real time: `--tts-playback-preroll-ms`
 
@@ -691,36 +701,29 @@ it commits at about `390ms`. Use it for ingest cost and concurrency headroom.
 
 `--real-target sync` is the pre-streaming design: transcribe the whole
 utterance, then run the LLM to completion, then synthesize each sentence with a
-blocking call. It measured **`18198.2ms` to first audio**, and because nothing
-overlaps, first audio equals total time.
+blocking call. Because nothing overlaps, first audio equals total time.
 
 This host varies by about `2x` depending on the external tenant, so the baseline
-is measured *beside* the candidate rather than quoted from an earlier session.
-Both arms use `--llm-trigger final`, produce the same reply, and were preceded by
-a `bench/gpu_contention_probe.py` reading:
+is measured *beside* the candidate. Both arms use `--llm-trigger final` and
+produce the same reply. The numbers to quote are the paired range in
+[Low-latency voice responses](#low-latency-voice-responses-use-the-low-latency-profile):
+**3.37x–4.41x first audio, 1.22x–1.59x total turn**.
 
-| pair | naive serialized | `low-latency` | first audio | total turn |
-|---|---|---|---|---|
-| r1 | 17353.9 ms | 3492.5 ms | **4.97x** | 1.78x |
-| r2 | 19049.7 ms | 3456.9 ms | **5.51x** | 1.91x |
+An earlier pair on a busy host read `4.97x` / `5.51x` first audio and `1.78x` /
+`1.91x` total. That pair is not withdrawn for semantics — both arms answered the
+same 22-word prompt — but it is not the number to cite: it is one thermal
+window, and the later bracketing naive arms already move by `1.31x` with no
+code change.
 
-So the speedup is roughly **5x on first audio and 1.9x on the whole turn**. The
-naive path is `--real-target sync`: transcribe everything, run the LLM to
-completion, then synthesize with one blocking call, so its first audio equals its
-total time.
+Two claims **are** withdrawn. `17.6x` and `31.7x` used `--llm-trigger committed`
+and compared a full answer against a one-word-prompt non-answer. `8.2x–10.4x`
+compared a quiet-host candidate against a baseline whose host state was
+unrecorded.
 
-Two earlier claims from this table are withdrawn. `17.6x` and `31.7x` used
-`--llm-trigger committed` and compared a full answer against a one-word-prompt
-non-answer. `8.2 - 10.4x` compared a quiet-host candidate against a baseline
-whose host state was unrecorded.
-
-The more important result is not a ratio. The naive path and the previous profile
-both ran TTS above real time, so they fell further behind the longer the agent
-spoke; the corrected profile runs at `0.752 - 0.936` on a quiet host. Note the
-paired runs above landed in the busy regime (TTS RTF `1.244` and `1.290`), and
-their total turn of `~9.9 s` is already close to the floor that RTF implies:
-`~2.7 s` of ASR ingest plus `~6.5 s` to synthesize `5.04 s` of reply. Further
-gains on total time have to come from TTS RTF, not from more overlap.
+The more important result is not a ratio. On these A100s the previous profile
+and the naive path both ran TTS above real time, so they fell further behind
+the longer the agent spoke. Further gains on **total** time have to come from
+TTS RTF, not from more ASR/LLM overlap: ASR is already hidden under speech.
 
 ### Read every number next to the GPU clock
 
@@ -743,10 +746,32 @@ bands apart. A sustained large matmul heats the card into throttle before it
 finishes, so it reports the hot steady state whatever it started from, and it read
 a flat `~90 TFLOPs` across arms whose real throughput differed by `1.9x`.
 
-Because the throttled state is this node's steady state, the deployment-relevant
-TTS RTF here is about `1.3`, not the `0.752 - 0.936` seen in transient cool
-windows. The `2.39x` gain from dropping the custom talker engine holds in both
-bands; sustained sub-1.0 RTF is not yet established.
+Because the throttled state is this node's steady state, the A100-local TTS RTF
+to plan around is about `1.3`, not a cool-window `0.75`. The `2.39x` gain from
+dropping the custom talker engine holds in both bands. Sub-1.0 RTF is established
+on the edge 4090 (see below), not on these A100s.
+
+### Cloud-edge split
+
+Resident edge ASR (`cuda:0`) and TTS (`cuda:1`) on two RTX 4090s, cloud LLM and
+coordinator on this host, `--realtime-input`, `low-latency`, same 22-word prompt
+and identical TTS bytes (`242316`). ICMP RTT is `0.25 ms`, so this is a
+rack-local split, not a WAN.
+
+| | first audio after stop | total turn | tts_rtf | playback |
+|---|---|---|---|---|
+| all-local paced | 809 ms | 15266 ms | 1.338 | starves (−1142 ms) |
+| edge ASR, cloud TTS | 771 ms | 15131 ms | 1.315 | starves (−1066 ms) |
+| **edge ASR+TTS, cloud LLM** | **498 ms** | **12141 ms** | **0.747** | **gapless (+160 ms)** |
+
+Isolated 4090 synthesis of the same sentence: `5040 ms` of audio in `3790 ms`,
+RTF `0.752`. Moving only ASR does not change first audio, because ASR was
+already hidden under speech. A real WAN (`10–50 ms` hop) is still unmeasured;
+`tc netem` is required before calling those numbers a WAN result.
+
+Browser verification: `GET /agent-latency` keeps the microphone and speaker on
+the client. Start the resident path with `bench/start_edge_resident.sh` on the
+edge host and `bench/start_cloudedge_voice_ui.sh` on the cloud.
 
 ### ASR chunk size and per-turn cost
 
@@ -775,15 +800,13 @@ Per-turn stage cost in the best configuration (8.25s in, 2.48s reply out):
 | LLM generate | 77.4 ms (8.6 ms/token) | n/a | yes |
 | TTS synthesize | 3100.2 ms | **1.25** | **no** |
 
-TTS is about `76%` of per-turn compute and had a real-time factor above `1.0` in
-every arm measured (`1.25` to `1.85`). Sustained duplex conversation needs TTS
-RTF below `1.0`, so that — not first audio — is the target for further
-outer-talker work.
+TTS is the stage that does not keep up on the A100s (`1.25` to `1.85` RTF in
+those ingest arms). Sustained duplex on that host needs TTS RTF below `1.0`.
+On the edge 4090 the same sentence measures RTF `0.747` and plays gapless.
 
-Note that `llm_trigger=committed` prompts the LLM with a fragment, so the reply
-changes with chunk size and is often generic. It is a latency mechanism, not a
-correctness one; a deployment using it should revise or replace the reply when
-`asr_final` disagrees with the prefix that triggered it.
+`--llm-trigger committed` is not a latency mechanism to deploy. It prompts the
+LLM with a fragment and often a generic reply; see
+[Do not use `--llm-trigger committed`](#do-not-use---llm-trigger-committed).
 
 For full local ASR+LLM+TTS timing, install Qwen-TTS into the nano-vLLM environment
 without replacing torch/torchaudio:
@@ -793,12 +816,7 @@ without replacing torch/torchaudio:
 apt-get install -y sox
 ```
 
-The timing harness now uses `QwenTtsBackend` directly for local TTS. Latest
-post-IPC smoke timing on the 5s sample with `--tts-flush-chars 20
---tts-coalesce-chars 80 --llm-max-num-seqs 4` measured async first audio
-5482.3ms and total 11062.4ms, versus sync first audio 7450.3ms and total
-14342.9ms. In that run LLM finished at 2101.8ms; total latency was dominated by
-local Qwen-TTS synthesis.
+The timing harness uses `QwenTtsBackend` directly for local TTS.
 
 Additional probes:
 
